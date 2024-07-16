@@ -6,6 +6,14 @@ bool isEmptyString(const char* input)
   }
   return 0;
 }
+bool isSingleZero(const char* input)
+{
+  if((input == '0'))
+  {
+    return 1;
+  }
+  return 0;
+}
 
 int add(const char* input)
 {
