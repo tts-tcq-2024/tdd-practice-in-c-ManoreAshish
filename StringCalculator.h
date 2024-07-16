@@ -8,7 +8,7 @@ bool isEmptyString(const char* input)
 }
 bool isSingleZero(const char* input)
 {
-  if((input == '0'))
+  if((input[0] == '0'))
   {
     return 1;
   }
