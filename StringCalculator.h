@@ -18,7 +18,7 @@ char isSingleZero(const char* input)
 
 int add(const char* input)
 {
-  if(isEmptyString(input) && isSingleZero (input))
+  if(isEmptyString(input))
   {
     return 0;
   }
