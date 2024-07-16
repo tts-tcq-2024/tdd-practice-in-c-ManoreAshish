@@ -1,3 +1,4 @@
+char isSingleZero(const char* input);
 char isEmptyString(const char* input)
 {
   if((input== NULL)|| (input[0] == '\0'))
