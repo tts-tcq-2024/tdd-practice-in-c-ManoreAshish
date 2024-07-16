@@ -4,7 +4,7 @@ bool isEmptyString(const char* input)
   {
     return 1;
   }
-  return 0;
+  return isSingleZero(input);
 }
 bool isSingleZero(const char* input)
 {
