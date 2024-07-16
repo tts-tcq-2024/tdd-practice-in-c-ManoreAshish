@@ -1,4 +1,4 @@
-bool isEmptyString(const char* input)
+char isEmptyString(const char* input)
 {
   if((input== NULL)|| (input[0] == '\0'))
   {
@@ -6,7 +6,7 @@ bool isEmptyString(const char* input)
   }
   return isSingleZero(input);
 }
-bool isSingleZero(const char* input)
+char isSingleZero(const char* input)
 {
   if((input[0] == '0'))
   {
