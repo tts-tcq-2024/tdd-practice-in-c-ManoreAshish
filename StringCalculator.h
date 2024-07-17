@@ -2,12 +2,12 @@
 
 int result=0;
 char *input;
-char *copy;
+String Copy;
 char isSingleZero(char* input);
 int isSumTwoNumbers(char* input);
 char isSpecialCharacter( char* input);
 
-char isSpecialCharacter( char* copy)
+char isSpecialCharacter( String copy)
 {
   for(int i=0;i<strlen(copy);i++)
     {
@@ -37,7 +37,7 @@ char isSingleZero( char* input)
 
 int isSumTwoNumbers( char* input)
 { 
-  char *copy= input;
+  String copy=input;
   if(isSpecialCharacter(copy))
   {
     for(int i=0;i<strlen(copy);i++)
