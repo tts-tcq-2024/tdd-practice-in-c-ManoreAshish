@@ -6,7 +6,7 @@ char isSingleZero(const char* input);
 int isSumTwoNumbers(const char* input);
 char isSpecialCharacter(const char* input);
 
-char isSpecialCharacter(input)
+char isSpecialCharacter(const char* input)
 {
   for(int i=0;i<strlen(input);i++)
     {
