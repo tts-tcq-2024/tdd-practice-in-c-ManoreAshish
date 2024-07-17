@@ -34,7 +34,7 @@ int add(const char* input)
 {
   if(isEmptyString(input))
   {
-    return 0;
+    return result;
   }
-  return result;
+  return -1;
 }
