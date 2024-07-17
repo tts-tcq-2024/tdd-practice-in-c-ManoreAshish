@@ -11,9 +11,9 @@ char isSpecialCharacter( char* input)
   for(int i=0;i<strlen(input);i++)
     {
       if(input[i]== ',')
-      *input[i]=*input[i+1];
-      return 1;
+      input[i]=input[i+1]; 
     }
+  return 1;
 }
 
 char isEmptyString( char* input)
