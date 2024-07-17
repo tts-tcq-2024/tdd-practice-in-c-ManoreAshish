@@ -1,7 +1,7 @@
 #include"string.h"
 
 int result=0;
-char* input;
+char input[];
 char isSingleZero(char* input);
 int isSumTwoNumbers(char* input);
 char isSpecialCharacter( char* input);
