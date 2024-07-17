@@ -2,11 +2,12 @@
 
 int result=0;
 char *input;
+char *copy;
 char isSingleZero(char* input);
 int isSumTwoNumbers(char* input);
 char isSpecialCharacter( char* input);
 
-char isSpecialCharacter( char copy[])
+char isSpecialCharacter( char* copy)
 {
   for(int i=0;i<strlen(copy);i++)
     {
@@ -36,7 +37,7 @@ char isSingleZero( char* input)
 
 int isSumTwoNumbers( char* input)
 { 
-  char copy[strlen(input)+1]= {input};
+  char *copy= input;
   if(isSpecialCharacter(copy))
   {
     for(int i=0;i<strlen(copy);i++)
