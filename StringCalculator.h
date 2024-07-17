@@ -6,12 +6,12 @@ char isSingleZero(char* input);
 int isSumTwoNumbers(char* input);
 char isSpecialCharacter( char* input);
 
-char isSpecialCharacter( char* input)
+char isSpecialCharacter( char copy[])
 {
-  for(int i=0;i<strlen(input);i++)
+  for(int i=0;i<strlen(copy);i++)
     {
-      if(input[i]== ',')
-      input[i]=input[i+1]; 
+      if(copy[i]== ',')
+      copy[i]=copy[i+1]; 
     }
   return 1;
 }
@@ -36,11 +36,12 @@ char isSingleZero( char* input)
 
 int isSumTwoNumbers( char* input)
 { 
-  if(isSpecialCharacter(input))
+  char copy[]=input;
+  if(isSpecialCharacter(copy))
   {
-    for(int i=0;i<strlen(input);i++)
+    for(int i=0;i<strlen(copy);i++)
       {
-        result=result+input[i];
+        result=result+copy[i];
       }
     return result;
   }
