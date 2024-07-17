@@ -1,11 +1,12 @@
 #include"string.h"
 
 int result=0;
+const char* input;
 char isSingleZero(const char* input);
 int isSumTwoNumbers(const char* input);
 char isSpecialCharacter(const char* input);
 
-char isSpecialCharacter(const char* input)
+char isSpecialCharacter(input)
 {
   for(int i=0;i<strlen(input);i++)
     {
