@@ -3,7 +3,7 @@
 
 TEST(StringCalculatorAddTests, ExpectZeroForEmptyInput) {
     int expectedresult = 0;
-    const char* input = "";
+     char* input = "";
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
 }
@@ -11,14 +11,14 @@ TEST(StringCalculatorAddTests, ExpectZeroForEmptyInput) {
 
 TEST(StringCalculatorAddTests, ExpectZeroForSingleZero) {
     int expectedresult = 0;
-    const char* input = "0";
+     char* input = "0";
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
 }
 
 TEST(StringCalculatorAddTests, ExpectSumForTwoNumbers) {
     int expectedresult = 3;
-    const char*  input = "1,2";
+     char*  input = "1,2";
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
 }
