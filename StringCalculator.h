@@ -38,8 +38,11 @@ int isSumTwoNumbers( char* input)
 { 
   if(isSpecialCharacter(input))
   {
-    result=input[0]+input[1];
-    return result;
+    for(int i=0;i<strlen(input);i++)
+      {
+        result=input[0]+input[1];
+        return result;
+      }
   }
 return 0;
 }
