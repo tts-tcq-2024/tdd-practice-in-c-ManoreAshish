@@ -36,7 +36,7 @@ char isSingleZero(const char* input)
 
 int isSumTwoNumbers(const char* input)
 { 
-  if(isSpecialCharacter(const char* input)
+  if(isSpecialCharacter(input))
   {
     result=input[0]+input[1];
     return result;
