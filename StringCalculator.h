@@ -36,7 +36,7 @@ char isSingleZero( char* input)
 
 int isSumTwoNumbers( char* input)
 { 
-  char copy[strlen(input)+1]=input;
+  char copy[strlen(input)+1]= {input};
   if(isSpecialCharacter(copy))
   {
     for(int i=0;i<strlen(copy);i++)
