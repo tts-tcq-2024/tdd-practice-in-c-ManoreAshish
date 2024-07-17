@@ -1,4 +1,4 @@
-char isSingleZero(const char* input);
+int result=0;char isSingleZero(const char* input);
 char isEmptyString(const char* input)
 {
   if((input== NULL)|| (input[0] == '\0'))
@@ -13,7 +13,16 @@ char isSingleZero(const char* input)
   {
     return 1;
   }
-  return 0;
+  return isSumTwoNumbers(input);
+}
+int isSumTwoNumbers(const char* input)
+{ 
+  if((input!= NULL) && (input[0] != '\0'))
+  {
+    result=input[0]+input[1];
+    return result;
+  }
+return 0;
 }
 
 int add(const char* input)
@@ -22,5 +31,5 @@ int add(const char* input)
   {
     return 0;
   }
-  return -1;
+  return result;
 }
