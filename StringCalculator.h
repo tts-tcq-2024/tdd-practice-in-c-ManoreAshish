@@ -1,12 +1,12 @@
 #include"string.h"
 
 int result=0;
-const char* input;
-char isSingleZero(const char* input);
-int isSumTwoNumbers(const char* input);
-char isSpecialCharacter(const char* input);
+cchar* input;
+char isSingleZero(char* input);
+int isSumTwoNumbers(char* input);
+char isSpecialCharacter( char* input);
 
-char isSpecialCharacter(const char* input)
+char isSpecialCharacter( char* input)
 {
   for(int i=0;i<strlen(input);i++)
     {
@@ -16,7 +16,7 @@ char isSpecialCharacter(const char* input)
     }
 }
 
-char isEmptyString(const char* input)
+char isEmptyString( char* input)
 {
   if((input== NULL)|| (input[0] == '\0'))
   {
@@ -25,7 +25,7 @@ char isEmptyString(const char* input)
   return isSingleZero(input);
 }
 
-char isSingleZero(const char* input)
+char isSingleZero( char* input)
 {
   if((input[0] == '0'))
   {
@@ -34,7 +34,7 @@ char isSingleZero(const char* input)
   return isSumTwoNumbers(input);
 }
 
-int isSumTwoNumbers(const char* input)
+int isSumTwoNumbers( char* input)
 { 
   if(isSpecialCharacter(input))
   {
@@ -44,7 +44,7 @@ int isSumTwoNumbers(const char* input)
 return 0;
 }
 
-int add(const char* input)
+int add( char* input)
 {
   if(isEmptyString(input))
   {
