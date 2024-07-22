@@ -5,9 +5,9 @@ char *input;
 char *copy;
 char isSingleZero(char* input);
 int isSumTwoNumbers(char* input);
-char isSpecialCharacter( char copy);
+char isSpecialCharacter( char* copy);
 
-char isSpecialCharacter( char copy)
+char isSpecialCharacter( char* copy)
 {
   for(int i=0;i<strlen(copy);i++)
     {
@@ -37,7 +37,13 @@ char isSingleZero( char* input)
 
 int isSumTwoNumbers( char* input)
 { 
-  char *copy= strncpy(input);
+  char *copy= NULL;
+  copy = (char*) malloc(strlen(input)+1);
+  for (int i = 0; input[i] != '\0'; i++) 
+   {
+            copy[i] = input[i];
+   }
+    copy[i] = '\0';
   if(isSpecialCharacter(copy))
   {
     for(int i=0;i<strlen(copy);i++)
