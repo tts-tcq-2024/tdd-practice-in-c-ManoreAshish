@@ -15,10 +15,16 @@ char isSpecialCharacter( char* copy)
       if(copy[i]== ',')
       copy[i]=copy[i+1];  
     }
-   for(int i=0;i!='\0';i++)
-   {
+   
+  return AddCopyString(copy);
+}
+
+int AddCopyString (char* copy)
+{
+  for(int i=0;i!='\0';i++)
+  {
    result=result+copy[i];
-   }
+  }
   return 1;
 }
 
