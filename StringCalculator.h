@@ -54,7 +54,7 @@ char isSpecialCharacter( char* copy)
       copy[i]=copy[i+1]; 
       copy[i+1]=0;
       }
-   
+    }
   return AddCopyString(copy);
 }
 
