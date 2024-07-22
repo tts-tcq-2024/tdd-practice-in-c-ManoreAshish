@@ -60,7 +60,7 @@ int AddCopyString (char* copy)
 {
   for(int i=0;copy[i]!='\0';i++)
   {
-   result=result+copy[i];
+   result=result+ (*copy[i]);
   }
   return 1;
 }
