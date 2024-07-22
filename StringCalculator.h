@@ -13,8 +13,9 @@ char isSpecialCharacter( char* copy)
     {
       if(copy[i]== ',')
       copy[i]=copy[i+1]; 
+      result=result+copy[i];
     }
-  result=result+copy[i];
+  
   return 1;
 }
 
