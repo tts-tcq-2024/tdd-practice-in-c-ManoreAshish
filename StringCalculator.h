@@ -7,6 +7,8 @@ char *copy;
 char isSingleZero(char* input);
 int isSumTwoNumbers(char* input);
 char isSpecialCharacter( char* copy);
+int AddCopyString (char* copy);
+
 
 char isSpecialCharacter( char* copy)
 {
