@@ -8,6 +8,7 @@ char isSingleZero(char* input);
 int isSumTwoNumbers(char* input);
 char isSpecialCharacter( char* copy);
 int AddCopyString (char* copy);
+char UpdateCopyString( char* copy);
 
 
 
@@ -49,13 +50,18 @@ char isSpecialCharacter( char* copy)
 {
   for(int i=0;copy[i]!='\0';i++)
     {
-      if((copy[i]== ',') ||(copy[i]== '\n'))
+    UpdateCopyString(copy);
+    }
+  return AddCopyString(copy);
+}
+
+char UpdateCopyString( char* copy)
+{
+    if((copy[i]== ',') ||(copy[i]== '\n'))
       { 
       copy[i]=copy[i+1]; 
       copy[i+1]=0; 
       }
-    }
-  return AddCopyString(copy);
 }
 
 int AddCopyString (char* copy)
