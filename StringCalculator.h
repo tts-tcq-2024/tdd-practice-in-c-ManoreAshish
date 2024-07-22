@@ -10,25 +10,6 @@ char isSpecialCharacter( char* copy);
 int AddCopyString (char* copy);
 
 
-char isSpecialCharacter( char* copy)
-{
-  for(int i=0;copy[i]!='\0';i++)
-    {
-      if(copy[i]== ',')
-      copy[i]=copy[i+1];  
-    }
-   
-  return AddCopyString(copy);
-}
-
-int AddCopyString (char* copy)
-{
-  for(int i=0;i!='\0';i++)
-  {
-   result=result+copy[i];
-  }
-  return 1;
-}
 
 char isEmptyString( char* input)
 {
@@ -62,6 +43,26 @@ int isSumTwoNumbers( char* input)
     return result;
   }
 return 0;
+}
+
+char isSpecialCharacter( char* copy)
+{
+  for(int i=0;copy[i]!='\0';i++)
+    {
+      if(copy[i]== ',')
+      copy[i]=copy[i+1];  
+    }
+   
+  return AddCopyString(copy);
+}
+
+int AddCopyString (char* copy)
+{
+  for(int i=0;copy[i]!='\0';i++)
+  {
+   result=result+copy[i];
+  }
+  return 1;
 }
 
 int add( char* input)
