@@ -1,5 +1,6 @@
 #include"string.h"
 
+int i=0;
 int result=0;
 char *input;
 char *copy;
@@ -12,10 +13,12 @@ char isSpecialCharacter( char* copy)
   for(int i=0;i!='\0';i++)
     {
       if(copy[i]== ',')
-      copy[i]=copy[i+1]; 
-      result=result+copy[i];
+      copy[i]=copy[i+1];  
     }
-  
+   for(int i=0;i!='\0';i++)
+   {
+   result=result+copy[i];
+   }
   return 1;
 }
 
