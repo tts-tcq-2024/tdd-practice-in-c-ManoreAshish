@@ -13,6 +13,7 @@ char isSpecialCharacter( char* copy)
     {
       if(copy[i]== ',')
       copy[i]=copy[i+1]; 
+      result=result+copy[i];
     }
   return 1;
 }
@@ -46,10 +47,6 @@ int isSumTwoNumbers( char* input)
     copy[i] = '\0';
   if(isSpecialCharacter(copy))
   {
-    for(int i=0;i<strlen(copy);i++)
-      {
-        result=result+copy[i];
-      }
     return result;
   }
 return 0;
