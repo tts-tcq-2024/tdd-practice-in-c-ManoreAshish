@@ -50,8 +50,10 @@ char isSpecialCharacter( char* copy)
   for(int i=0;copy[i]!='\0';i++)
     {
       if(copy[i]== ',')
-      copy[i]=copy[i+1];  
-    }
+      { 
+      copy[i]=copy[i+1]; 
+      copy[i+1]=0;
+      }
    
   return AddCopyString(copy);
 }
