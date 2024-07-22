@@ -9,7 +9,7 @@ char isSpecialCharacter( char* copy);
 
 char isSpecialCharacter( char* copy)
 {
-  for(int i=0;i<=strlen(copy);i++)
+  for(int i=0;i!='\0';i++)
     {
       if(copy[i]== ',')
       copy[i]=copy[i+1]; 
