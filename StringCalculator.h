@@ -9,12 +9,12 @@ char isSpecialCharacter( char* copy);
 
 char isSpecialCharacter( char* copy)
 {
-  for(int i=0;i<strlen(copy);i++)
+  for(int i=0;i<=strlen(copy);i++)
     {
       if(copy[i]== ',')
       copy[i]=copy[i+1]; 
-      result=result+copy[i];
     }
+  result=result+copy[i];
   return 1;
 }
 
