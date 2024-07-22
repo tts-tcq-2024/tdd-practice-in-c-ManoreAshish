@@ -40,7 +40,7 @@ int isSumTwoNumbers( char* input)
     copy[i] = '\0';
   if(isSpecialCharacter(copy))
   {
-    return result;
+    return 1;
   }
 return 0;
 }
