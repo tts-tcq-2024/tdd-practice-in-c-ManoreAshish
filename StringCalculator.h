@@ -36,10 +36,10 @@ char isSingleZero( char* input)
 }
 
 int isSumTwoNumbers( char* input)
-{ 
+{ int i=0;
   char *copy= NULL;
   copy = (char*) malloc(strlen(input)+1);
-  for (int i = 0; input[i] != '\0'; i++) 
+  for (i = 0; input[i] != '\0'; i++) 
    {
             copy[i] = input[i];
    }
