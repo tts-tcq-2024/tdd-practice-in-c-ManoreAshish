@@ -52,7 +52,7 @@ char isSpecialCharacter( char* copy)
       if((copy[i]== ',') ||(copy[i]== '\n'))
       { 
       copy[i]=copy[i+1]; 
-      copy[i+1]=0;
+      copy[i+1]=0; 
       }
     }
   return AddCopyString(copy);
