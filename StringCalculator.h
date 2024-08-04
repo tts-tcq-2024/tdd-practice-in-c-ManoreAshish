@@ -30,23 +30,6 @@ char isSingleZero( char* input)
   return isSumTwoNumbers(input);
 }
 
-
-int isSumTwoNumbers( char* input)
-{ int i=0;
-  char *copy= NULL;
-  copy = (char*) malloc(strlen(input)+1);
-  for (i = 0; input[i] != '\0'; i++) 
-   {
-            copy[i] = input[i];
-   }
-    copy[i] = '\0';
-  if(isSpecialCharacter(copy))
-  {
-    return 1;
-  }
-return 0;
-}
-
 int isSumTwoNumbers( char* input)
 { int i=0;
   char *copy= NULL;
