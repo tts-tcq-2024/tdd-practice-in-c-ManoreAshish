@@ -58,7 +58,7 @@ char isSpecialCharacter( char* copy)
 
 char UpdateCopyString( char* copy)
 {
-    if(copy[k]== ',' || copy[k]>1000)
+    if(copy[k]== ',' || copy[k] == "\n")
       { 
       copy[k]=copy[k+1]; 
       copy[k+1]=0; 
