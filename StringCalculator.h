@@ -69,12 +69,13 @@ char isSpecialCharacter( char* copy)
     {
     UpdateCopyString(copy);
     }
+  copy[k] = '\0';
   return AddCopyString(copy);
 }
 
 char UpdateCopyString( char* copy)
 {
-    if(copy[k]== ',' || copy[k]>1000')
+    if(copy[k]== ',' || copy[k]>1000)
       { 
       copy[k]=copy[k+1]; 
       copy[k+1]=0; 
