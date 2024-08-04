@@ -1,6 +1,6 @@
 #include"string.h"
 
-int i=0;
+int k=0;
 int result=0;
 char *input;
 char *copy;
@@ -48,7 +48,7 @@ return 0;
 
 char isSpecialCharacter( char* copy)
 {
-  for(int i=0;copy[i]!='\0';i++)
+  for(k=0;copy[k]!='\0';k++)
     {
     UpdateCopyString(copy);
     }
@@ -57,18 +57,18 @@ char isSpecialCharacter( char* copy)
 
 char UpdateCopyString( char* copy)
 {
-    if(copy[i]== ',')
+    if(copy[k]== ',')
       { 
-      copy[i]=copy[i+1]; 
-      copy[i+1]=0; 
+      copy[k]=copy[k+1]; 
+      copy[k+1]=0; 
       }
 }
 
 int AddCopyString (char* copy)
 {
-  for(int i=0;copy[i]!='\0';i++)
+  for(int j=0;copy[j]!='\0';j++)
   {
-   result=result+ (copy[i]-'0');
+   result=result+ (copy[j]-'0');
   }
   return 1;
 }
