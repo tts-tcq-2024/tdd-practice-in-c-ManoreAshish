@@ -32,7 +32,7 @@ TEST(StringCalculatorAddTests, ExpectSumForTwoNumbers) {
 */
 TEST(StringCalculatorAddTests, IgnoreNumbersGreaterThan1000) {
     int expectedresult = 1;
-    const char*  input = "1,1001";
+     char*  input = "1,1001";
     int result =add(input);
     ASSERT_EQ(result, expectedresult);
 }
